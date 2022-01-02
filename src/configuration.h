@@ -38,7 +38,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define RANDOMX_ARGON_LANES        1
 
 //Argon2d salt
-#define RANDOMX_ARGON_SALT         "RandomX\x03"
+#define RANDOMX_ARGON_SALT         "RandomX\x06"
 
 //Number of random Cache accesses per Dataset item. Minimum is 2.
 #define RANDOMX_CACHE_ACCESSES     8
@@ -112,11 +112,11 @@ Total sum of frequencies must be 256
 #define RANDOMX_FREQ_FSQRT_R        6
 
 //Control instructions
-#define RANDOMX_FREQ_CBRANCH       25
+#define RANDOMX_FREQ_CBRANCH       16
 #define RANDOMX_FREQ_CFROUND        1
 
 //Store instruction
-#define RANDOMX_FREQ_ISTORE        16
+#define RANDOMX_FREQ_ISTORE        25
 
 //No-op instruction
 #define RANDOMX_FREQ_NOP            0
